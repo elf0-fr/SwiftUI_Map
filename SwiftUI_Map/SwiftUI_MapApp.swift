@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUI_MapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Controls()
+                .environment(ApplicationData(coordinates: .applePark))
         }
     }
 }
